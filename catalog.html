@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page-body page-background-green">
-        <header class="main-header">
-            <a href="index.html" class="main-header-logo">
-                <img src="img/logo-gllacy.svg" alt="Логотип магазина мороженного «Глейси»" width="154" height="64">
-            </a>
+        <header class="main-header center">
             <nav class="main-navigation">
+                <a href="index.html" class="main-header-logo">
+                    <img src="img/logo-gllacy.svg" alt="Логотип магазина мороженного «Глейси»" width="154" height="64">
+                </a>
+                
                 <ul class="site-navigation">
                     <li class="site-navigation-item">
                         <div class="catalog">
@@ -60,7 +61,7 @@
                             <form class="login-form" action="" method="POST">
                                 <input type="email" name="email" placeholder="email@example.com">
                                 <input type="password" name="password" placeholder="......">
-                                <input class="button" type="submit" value="Войти">
+                                <input class="button-form button" type="submit" value="Войти">
                             </form>
                             <a href="#" class="form-link">Забыли пароль?</a>
                             <a href="#" class="form-link">Новая регистрация</a>
@@ -87,14 +88,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="call-us">
-                    <p class="call-us-datetime">с <time datetime="T10:00">10</time> до <time datetime="T20:00">20</time>, ежедневно</p>
-                    <a href="tel:8 812 450-25-25" class="call-us-phone">8 812 450-25-25</a>
-                </div>
             </nav>
+
+            <div class="call-us">
+                <p class="call-us-datetime">с <time datetime="T10:00">10</time> до <time datetime="T20:00">20</time>, ежедневно</p>
+                <a href="tel:8 812 450-25-25" class="call-us-phone">8 812 450-25-25</a>
+            </div>
         </header>
 
-        <main class="container">
+        <main class="container center">
             <h1 class="creamy-ice-cream-caption">Сливочное мороженое</h1>
 
             <ul class="breadcrumbs-list">
@@ -105,12 +107,12 @@
                     <a href="#">Каталог</a>
                 </li>
                 <li class="breadcrumbs-item">
-                    Средства для ухода
+                    Сливочное
                 </li>
             </ul>
 
             <section class="form-filter">
-                <h2>Фильтр товаров</h2>
+                <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form action="#" class="form">
                     <fieldset class="filter-sort">
                         <legend class="filter-caption">Сортировка:</legend>
@@ -129,7 +131,7 @@
             </section>
 
             <section class="products">
-                <h2>Мороженное</h2>
+                <h2 class="visually-hidden">Мороженное</h2>
                 <ul class="products-list">
                     <li class="products-item">
                         <img src="img/orange-jam.jpg" alt="" width="267" height="267" class="product-image">
@@ -225,9 +227,9 @@
             </section>
         </main>
 
-        <footer class="main-footer">
+        <footer class="main-footer center">
             <section class="socials">
-                <h2>Наши социальные сети</h2>
+                <h2 class="visually-hidden">Наши социальные сети</h2>
                 <ul class="socials-list">
                     <li class="socials-item">
                         <a href="#" class="socials-item-link">
@@ -253,7 +255,7 @@
             </section>
 
             <section class="extra-info">
-                <h2>Дополнительная информация</h2>
+                <h2 class="visually-hidden">Дополнительная информация</h2>
                 <ul class="extra-list">
                     <li class="extra-item">
                         <a href="#">Для поставщиков</a>

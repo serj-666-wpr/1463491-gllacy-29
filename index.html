@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="css/style.css"> 
     </head>
     <body class="page-body page-background-green">
-        <header class="main-header">
-            <img src="img/logo-gllacy.svg" alt="Логотип магазина мороженного «Глейси»" width="154" height="64">
+        <header class="main-header center">
             <nav class="main-navigation">
+                <img src="img/logo-gllacy.svg" alt="Логотип магазина мороженного «Глейси»" width="154" height="64">
+
                 <ul class="site-navigation">
                     <li class="site-navigation-item">
                         <div class="catalog">
@@ -40,6 +41,7 @@
                         <a href="#">О компании</a>
                     </li>
                 </ul>
+
                 <div class="user-navigation">
                     <div class="search-container">
                         <div class="search-background">
@@ -57,7 +59,7 @@
                             <form class="login-form" action="" method="POST">
                                 <input type="email" name="email" placeholder="email@example.com">
                                 <input type="password" name="password" placeholder="......">
-                                <input class="button" type="submit" value="Войти">
+                                <input class="button-form button" type="submit" value="Войти">
                             </form>
                             <a href="#" class="form-link">Забыли пароль?</a>
                             <a href="#" class="form-link">Новая регистрация</a>
@@ -70,19 +72,20 @@
                         </a>
                     </div>
                 </div>
-                <div class="call-us">
-                    <p class="call-us-datetime">с <time datetime="T10:00">10</time> до <time datetime="T20:00">20</time>, ежедневно</p>
-                    <a href="tel:8 812 450-25-25" class="call-us-phone">8 812 450-25-25</a>
-                </div>
             </nav>
+            
+            <div class="call-us">
+                <p class="call-us-datetime">с <time datetime="T10:00">10</time> до <time datetime="T20:00">20</time>, ежедневно</p>
+                <a href="tel:8 812 450-25-25" class="call-us-phone">8 812 450-25-25</a>
+            </div>
         </header>
 
         <main class="container">
 
-            <h1>Магазин мороженного «Глейси»</h1>
+            <h1 class="visually-hidden">Магазин мороженного «Глейси»</h1>
 
-            <section class="slider">
-                <h2>Слайдер с мороженным</h2>
+            <section class="slider center">
+                <h2 class="visually-hidden">Слайдер с мороженным</h2>
                 <ul class="slider-list">
                     <li class="slider-list-item">
                         <p class="slider-text visible">Крем-брюле и пломбир с малиновым джемом</p>
@@ -102,8 +105,8 @@
                 </div>
             </section>
 
-            <div class="bonus">
-                <h2>Бонусы</h2>
+            <div class="bonus grid center">
+                <h2 class="visually-hidden">Бонусы</h2>
                 <article class="raspberries-bonus">
                     <h3 class="bonus-caption">Малинка даром!</h3>
                     <p class="bonus-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -117,8 +120,8 @@
                 </article>
             </div>
 
-            <section class="hits">
-                <h2>Хиты</h2>
+            <section class="hits center">
+                <h2 class="visually-hidden">Хиты</h2>
                 <ul class="hits-list">
                     <li class="hits-list-item">
                         <img src="img/orange-jam.jpg" alt="" width="267" height="267" class="product-image">
@@ -147,10 +150,10 @@
                 </ul>
             </section>
 
-            <section class="about-us">
-                <h2>О нас</h2>
+            <section class="about-us center">
+                <h2 class="visually-hidden">О нас</h2>
                 <p class="about-us-caption">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-                <ul class="about-us-list">
+                <ul class="about-us-list grid">
                     <li class="about-us-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
                     <li class="about-us-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
                     <li class="about-us-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
@@ -158,41 +161,45 @@
                 </ul>
             </section>
 
-            <article class="news">
-                <h2>Новости</h2>
-                <p class="news-text">Новое в нашем блоге</p>
-                <h3 class="news-caption">10 способов сервировки фруктовых щербетов к столу</h3>
-            </article>
+            <div class="center grid">
+                <article class="news">
+                    <h2 class="visually-hidden">Новости</h2>
+                    <p class="news-text">Новое в нашем блоге</p>
+                    <h3 class="news-caption">10 способов сервировки фруктовых щербетов к столу</h3>
+                </article>
 
-            <aside class="mailing">
-                <h2>Рассылка</h2>
-                <div class="mailing-wrapper">
-                    <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                    <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="POST">
-                        <input class="mailing-input" type="email" name="email" placeholder="email@example.com" required>
-                        <input class="mailing-button button" type="submit" value="Отправить">
-                    </form>
-                </div>
-            </aside>
+                <aside class="mailing">
+                    <h2 class="visually-hidden">Рассылка</h2>
+                    <div class="mailing-wrapper">
+                        <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="POST">
+                            <input class="mailing-input" type="email" name="email" placeholder="email@example.com" required>
+                            <input class="mailing-button button-form button" type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </aside>
+            </div>
 
             <section class="map">
-                <h2>Карта</h2>
+                <h2 class="visually-hidden">Карта</h2>
                 <img src="img/map.png" width="1200" height="430" class="map-image" alt="Карта с расположением магазина мороженного «Глейси»">
-                <div class="our-contacts">
-                    <h3>Наши контакты</h3>
-                    <p class="our-contacts-caption">Адрес главного офиса и офлайн-магазина:</p>
-                    <p class="our-contacts-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-                    <p class="our-contacts-caption">Для заказов по телефону:</p>
-                    <a href="tel:8 812 450-25-25" class="about-us-phone">8 812 450-25-25</a>
-                    <p class="about-us-datetime">с <time datetime="T10:00">10</time> до <time datetime="T20:00">20</time> ежедневно</p>
-                    <a href="#" class="modal-form button">Форма обратной связи</a>
+                <div class="map-wrapper center">
+                    <div class="our-contacts">
+                        <h3 class="visually-hidden">Наши контакты</h3>
+                        <p class="our-contacts-caption">Адрес главного офиса и офлайн-магазина:</p>
+                        <p class="our-contacts-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+                        <p class="our-contacts-caption">Для заказов по телефону:</p>
+                        <a href="tel:8 812 450-25-25" class="about-us-phone">8 812 450-25-25</a>
+                        <p class="about-us-datetime">(с <time datetime="T10:00">10</time> до <time datetime="T20:00">20</time> ежедневно)</p>
+                        <a href="#" class="our-contacts-button modal-form button">Форма обратной связи</a>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer class="main-footer">
+        <footer class="main-footer center">
             <section class="socials">
-                <h2>Наши социальные сети</h2>
+                <h2 class="visually-hidden">Наши социальные сети</h2>
                 <ul class="socials-list">
                     <li class="socials-item">
                         <a href="#" class="socials-item-link">
@@ -218,7 +225,7 @@
             </section>
 
             <section class="extra-info">
-                <h2>Дополнительная информация</h2>
+                <h2 class="visually-hidden">Дополнительная информация</h2>
                 <ul class="extra-list">
                     <li class="extra-item">
                         <a href="#">Для поставщиков</a>
@@ -246,7 +253,7 @@
                 <textarea name="letter" placeholder="В свободной форме" required></textarea>
                 <input class="button button-form" type="submit" value="Отправить">
             </form>
-            <button class="button-close "></button>
+            <button class="button-close"></button>
         </section>
     </body>
 </html>
