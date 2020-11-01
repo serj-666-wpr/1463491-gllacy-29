@@ -67,9 +67,7 @@
                     </div>
 
                     <div class="basket-container">
-                        <a href="#" class="basket">
-                            Пусто
-                        </a>
+                        <a href="#" class="basket">Пусто</a>
                     </div>
                 </div>
             </nav>
@@ -84,24 +82,36 @@
 
             <h1 class="visually-hidden">Магазин мороженного «Глейси»</h1>
 
-            <section class="slider center">
+            <section class="slider-section center">
                 <h2 class="visually-hidden">Слайдер с мороженным</h2>
-                <ul class="slider-list">
-                    <li class="slider-list-item">
-                        <p class="slider-text visible">Крем-брюле и пломбир с малиновым джемом</p>
-                    </li>
-                    <li class="slider-list-item">
-                        <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
-                    </li>
-                    <li class="slider-list-item">
-                        <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
-                    </li>
-                </ul>
-                <a href="#" class="slider-button button">Давайте оба!</a>
+
+                <div class="slider">
+                    <ul class="slider-list">
+                        <li class="slider-list-item slider-item-first visible">
+                            <img src="img/raspberry-jam.png" alt="Пломбир с малиновым джемом" width="333" height="519" class="slider-picture-back">
+                            <img src="img/creme-brulee.png" alt="Крем-брюле" width="372" height="584" class="slider-picture-front">
+                            <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
+                        </li>
+                        <li class="slider-list-item slider-item-second">
+                            <img src="img/lemon-sorbet.png" alt="Лимонный сорбет" width="338" height="523" class="slider-picture-back">
+                            <img src="img/chocolate.png" alt="Шоколадный пломбир" width="375" height="582" class="slider-picture-front">
+                            <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
+                        </li>
+                        <li class="slider-list-item slider-item-third">
+                            <img src="img/strawberry-sorbet.png" alt="Клубничный щербет" width="326" height="523" class="slider-picture-back">
+                            <img src="img/with-fondant.png" alt="Пломбир с помадкой" width="367" height="582" class="slider-picture-front">
+                            <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
+                        </li>
+                    </ul>
+                    <div class="slider-button-wrapper">
+                        <a href="#" class="slider-button button">Давайте оба!</a>
+                    </div>
+                </div>
+                
                 <div class="slider-controls">
-                    <button class="slide-control"></button>
-                    <button class="slide-control"></button>
-                    <button class="slide-control"></button>
+                    <button class="slide-control slide-control-one current"></button>
+                    <button class="slide-control slide-control-two"></button>
+                    <button class="slide-control slide-control-tree"></button>
                 </div>
             </section>
 
@@ -154,10 +164,10 @@
                 <h2 class="visually-hidden">О нас</h2>
                 <p class="about-us-caption">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
                 <ul class="about-us-list grid">
-                    <li class="about-us-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-                    <li class="about-us-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-                    <li class="about-us-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-                    <li class="about-us-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+                    <li class="about-us-text ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+                    <li class="about-us-text cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+                    <li class="about-us-text leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+                    <li class="about-us-text thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
                 </ul>
             </section>
 
@@ -165,7 +175,7 @@
                 <article class="news">
                     <h2 class="visually-hidden">Новости</h2>
                     <p class="news-text">Новое в нашем блоге</p>
-                    <h3 class="news-caption">10 способов сервировки фруктовых щербетов к столу</h3>
+                    <h3 class="news-caption">10 способов сервировки фруктовых щербетов<br>к столу</h3>
                 </article>
 
                 <aside class="mailing">
@@ -191,7 +201,7 @@
                         <p class="our-contacts-caption">Для заказов по телефону:</p>
                         <a href="tel:8 812 450-25-25" class="about-us-phone">8 812 450-25-25</a>
                         <p class="about-us-datetime">(с <time datetime="T10:00">10</time> до <time datetime="T20:00">20</time> ежедневно)</p>
-                        <a href="#" class="our-contacts-button modal-form button">Форма обратной связи</a>
+                        <a href="form.html" class="our-contacts-button modal-form button">Форма обратной связи</a>
                     </div>
                 </div>
             </section>
@@ -203,22 +213,22 @@
                 <ul class="socials-list">
                     <li class="socials-item">
                         <a href="#" class="socials-item-link">
-                            <span>facebook</span>
+                            <span class="visually-hidden">facebook</span>
                         </a>
                     </li>
                     <li class="socials-item">
                         <a href="#" class="socials-item-link">
-                            <span>vk</span>
+                            <span class="visually-hidden">vk</span>
                         </a>
                     </li>
                     <li class="socials-item">
                         <a href="#" class="socials-item-link">
-                            <span>instagram</span>
+                            <span class="visually-hidden">instagram</span>
                         </a>
                     </li>
                     <li class="socials-item">
                         <a href="#" class="socials-item-link">
-                            <span>twitter</span>
+                            <span class="visually-hidden">twitter</span>
                         </a>
                     </li>
                 </ul>
@@ -255,5 +265,7 @@
             </form>
             <button class="button-close"></button>
         </section>
+
+        <script src="js/slider.js"></script>
     </body>
 </html>
