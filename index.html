@@ -47,7 +47,9 @@
                         <div class="search-background">
                             <svg class="search pointer" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z" fill="#fff"/></svg>
                         </div>
-                        <input class="input-search" type="search" name="search" placeholder="Крем-брюле">
+                        <div class="search-popup">
+                            <input class="input-search" type="search" name="search" placeholder="Крем-брюле">
+                        </div>
                     </div>
 
                     <div class="login-container">
@@ -199,7 +201,7 @@
                         <p class="our-contacts-caption">Для заказов по телефону:</p>
                         <a href="tel:8 812 450-25-25" class="about-us-phone">8 812 450-25-25</a>
                         <p class="about-us-datetime">(с <time datetime="T10:00">10</time> до <time datetime="T20:00">20</time> ежедневно)</p>
-                        <a href="form.html" class="our-contacts-button modal-form button">Форма обратной связи</a>
+                        <a href="form.html" class="our-contacts-button button">Форма обратной связи</a>
                     </div>
                 </div>
             </section>
@@ -258,15 +260,16 @@
 
         <section class="modal">
             <p class="modal-caption">Мы обязательно вам ответим!</p>
-            <form action="" method="POST">
-                <input type="text" name="name" placeholder="Имя Фамилия" required>
-                <input type="email" name="email" placeholder="email@example.com" required>
-                <textarea name="letter" placeholder="В свободной форме" required></textarea>
-                <input class="button button-form" type="submit" value="Отправить">
+            <form action="" method="POST" class="modal-form">
+                <input type="text" name="name" class="name" placeholder="Имя Фамилия" required>
+                <input type="email" name="email" class="email" placeholder="email@example.com" required>
+                <textarea name="letter" class="letter" rows="6" placeholder="В свободной форме" required></textarea>
+                <input class="button button-form modal-button" type="submit" value="Отправить">
             </form>
-            <button class="button-close"></button>
+            <button class="modal-close"></button>
         </section>
 
         <script src="js/slider.js"></script>
+        <script src="js/modal.js"></script>
     </body>
 </html>

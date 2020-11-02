@@ -194,8 +194,7 @@ img {
 	border-radius: 26px;
 }
 
-.site-navigation-item:hover > a,
-.site-navigation-catalog:hover {
+.site-navigation-item:hover > a {
 	background-color: var(--white);
 	color: var(--dark-grey);
 }
@@ -211,10 +210,6 @@ img {
 }
 
 /* Catalog */
-.site-navigation-catalog:hover {
-	cursor: pointer;
-}
-
 .catalog-popup {
 	display: none;
 	position: absolute;
@@ -240,6 +235,12 @@ img {
 
 .catalog:hover .catalog-popup{
 	display: block;
+}
+
+.catalog:hover .site-navigation-catalog {
+	background-color: var(--white);
+	color: var(--dark-grey);
+	cursor: pointer;
 }
 
 .catalog-caption {
@@ -273,6 +274,7 @@ img {
 	margin-right: 10px;
 }
 
+/* Search popup */
 .search-background {
 	background-color: var(--white-higher-opacity);
 	border-radius: 50%;
@@ -284,13 +286,24 @@ img {
 	padding: 8px; 
 }
 
-.input-search {
+.search-popup {
 	display: none;
 	position: absolute;
+	background-color: var(--white-yellow);
+	padding: 20px 15px;
+	box-shadow: 0px 20px 20px var(--black-opacity);
+	border-radius: 4px;
 }
 
-.search-container:hover .input-search {
+.search-container:hover .search-popup {
 	display: block;
+}
+
+.input-search {
+	background: var(--white);
+	border: 1px solid var(--darker-white);
+	box-sizing: border-box;
+	border-radius: 4px;
 }
 
 /* Login popup */
@@ -829,6 +842,7 @@ img {
 	display: block;
 	width: max-content;
 	padding: 10px 28px;
+	margin: 0 auto;
 }
 
 /* Footer */
@@ -940,5 +954,60 @@ img {
 /* Modal */
 .modal {
 	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 20px 23px;
+	width: 477px;
+	border-radius: 6px;
 	background-color: var(--white-yellow);
+	z-index: 4;
+}
+
+.modal-open {
+	display: block;
+}
+
+.modal-form {
+	display: grid;
+	gap: 20px;
+}
+
+.modal-caption {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	color: var(--dark-grey);
+	margin-top: 0;
+}
+
+.name,
+.email,
+.letter {
+	width: 267px;
+	padding: 14px 14px;
+	box-sizing: border-box;
+	background-color: var(--white);
+	border: 1px solid var(--grey-lite-opacity);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.letter {
+	resize: none;
+	width: auto;
+}
+
+.modal-button {
+	display: block;
+	width: max-content;
+	margin-left: auto;
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 0;
 }

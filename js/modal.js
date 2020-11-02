@@ -1,4 +1,4 @@
-const modalOpen = document.querySelector(".button-write-us");
+const modalOpen = document.querySelector(".our-contacts-button");
 const modal = document.querySelector(".modal");
 const modalClose = modal.querySelector(".modal-close");
 const modalForm = modal.querySelector(".modal-form");
@@ -19,7 +19,7 @@ try {
 /*Open*/
 modalOpen.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	modal.classList.add("modal-current");
+	modal.classList.add("modal-open");
 	if (storage) {
 		modalName.value = storage;
 		modalEmail.focus();
@@ -31,13 +31,13 @@ modalOpen.addEventListener("click", function (evt) {
 /*Close*/
 modalClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	modal.classList.remove("modal-current");
+	modal.classList.remove("modal-open");
 	modal.classList.remove("modal-error");
 });
 
 document.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
-		modal.classList.remove("modal-current");
+		modal.classList.remove("modal-open");
 		modal.classList.remove("modal-error");
 	}
 });
