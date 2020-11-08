@@ -13,8 +13,19 @@
                     <img src="img/logo-gllacy.svg" class="main-logo" alt="Логотип магазина мороженного «Глейси»" width="154" height="64">
                 </a>
                 <ul class="site-navigation">
-                    <li class="site-navigation-item">
+                    <li class="site-navigation-item site-item-current">
                         <a href="#"><span>Каталог</span></a>
+                        <div class="catalog-bar-wrapper">
+                            <div class="catalog-bar">
+                                <p class="catalog-bar-caption">Новинки</p>
+                                <ul class="catalog-list">
+                                    <li class="catalog-list-item catalog-item-current"><a href="#">Сливочное</a></li>
+                                    <li class="catalog-list-item"><a href="#">Щербеты</a></li>
+                                    <li class="catalog-list-item"><a href="#">Фруктовый лед</a></li>
+                                    <li class="catalog-list-item"><a href="#">Мелорин</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="site-navigation-item">
                         <a href="#"><span>Доставка и оплата</span></a>
@@ -27,46 +38,56 @@
                 <div class="user-navigation">
                     <div class="search-container">
                         <div class="search-background">
-                            <svg class="search pointer" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z" fill="#fff"/></svg>
+                            <svg class="search pointer" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.67l-4.92-4.94A6.14 6.14 0 005.86.01 6.11 6.11 0 000 5.9a6.14 6.14 0 005.43 6.32 6.11 6.11 0 004.32-1.15l4.9 4.92L16 14.67zm-9.92-4.3A4.24 4.24 0 011.91 5.3a4.26 4.26 0 017.7-1.54 4.27 4.27 0 01-3.53 6.63z"/></svg>
                         </div>
-                        <div class="search-popup">
-                            <input class="input-search" type="search" name="search" placeholder="Крем-брюле">
+                        <div class="search-popup-wrapper">
+                            <div class="search-popup">
+                                <input class="input-search" type="search" name="search" placeholder="Крем-брюле">
+                            </div>
                         </div>
                     </div>
 
                     <div class="login-container">
                         <a href="#" class="login-popup-open">
-                            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg>
+                            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z"/></svg>
                             Вход
                         </a>
-                        <div class="login-popup">
-                            <form class="login-form" action="" method="POST">
-                                <input type="email" name="email" placeholder="email@example.com">
-                                <input type="password" name="password" placeholder="......">
-                                <input class="button-form button" type="submit" value="Войти">
-                            </form>
-                            <a href="#" class="form-link">Забыли пароль?</a>
-                            <a href="#" class="form-link">Новая регистрация</a>
+                        <div class="login-popup-wrapper">
+                            <div class="login-popup">
+                                <form class="login-form" action="#" method="POST">
+                                    <input  class="login-popup-input"type="email" name="email" placeholder="email@example.com">
+                                    <input class="login-popup-input" type="password" name="password" placeholder="......">
+                                    <input class="button-form button login-popup-button" type="submit" value="Войти">
+                                </form>
+                                <div class="login-link-container">
+                                    <a href="#" class="login-popup-link">Забыли пароль?</a>
+                                    <a href="#" class="login-popup-link">Новая регистрация</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="basket-container">
-                        <a class="basket basket-fill">2 товара</a>
-                        <div class="basket-popup">
-                            <table class="basket-table">
-                                <tr>
-                                    <td>Пломбир с апельсиновым джемом</td>
-                                    <td class="weight">1,5 кг х <span class="weight-price">200 руб.</span></td>
-                                    <td>300 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                                    <td class="weight">1,5 кг х <span class="weight-price">300 руб.</span></td>
-                                    <td>450 руб.</td>
-                                </tr>
-                            </table>
-                            <p class="total-price">Итого: 750 руб.</p>
-                            <a class="basket-button button">Оформить заказ</a>
+                        <a href="#" class="basket basket-fill">2 товара</a>
+                        <div class="basket-popup-wrapper">
+                            <div class="basket-popup">
+                                <table class="basket-table">
+                                    <tr class="table-row">
+                                        <td class="table-cell table-image"><img src="img/orange-jam.jpg" width="33" height="33"></td>
+                                        <td class="table-cell table-text">Пломбир с апельсиновым джемом</td>
+                                        <td class="table-cell table-weight">1,5 кг х <span class="weight-price">200 руб.</span></td>
+                                        <td class="table-cell">300 руб.</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="table-cell table-image"><img src="img/strawberry.jpg" width="33" height="33"></td>
+                                        <td class="table-cell table-text">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                        <td class="table-cell table-weight">1,5 кг х <span class="weight-price">300 руб.</span></td>
+                                        <td class="table-cell">450 руб.</td>
+                                    </tr>
+                                </table>
+                                <p class="total-price">Итого: 750 руб.</p>
+                                <a class="basket-button button basket-table-button">Оформить заказ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,14 +121,16 @@
                 <form action="https://echo.htmlacademy.ru/" class="form" method="GET">
                     <fieldset class="filter-item">
                         <legend class="filter-caption">Сортировка:</legend>
-                        <div class="filter-container filter-sort">
+                        <div class="select-wrapper">
                             <select class="filter-select" name="sort">
                                 <option class="filter-select-item" value="По популярности">По популярности</option>
                                 <option class="filter-select-item" value="Сначала недорогие">Сначала недорогие</option>
                                 <option class="filter-select-item" value="Сначала дорогие">Сначала дорогие</option>
                                 <option class="filter-select-item" value="По жирности">По жирности</option>
                             </select>
-                            <img src="img/arrow-select.svg" width="11" height="10">
+                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="select-arrow">
+                            <path d="M5.5 10L0 0H11"/>
+                            </svg>
                         </div>
                     </fieldset>
                     <fieldset class="filter-item">
@@ -130,7 +153,7 @@
                                 <span class="filter-text radio">0%</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" class="filter-radio visually-hidden" name="radio" value="до 10%">
+                                <input type="radio" class="filter-radio visually-hidden" name="radio" value="до 10%" checked>
                                 <span class="filter-text radio">до 10%</span>
                             </label>
                             <label class="radio-label">
@@ -147,11 +170,11 @@
                         <legend class="filter-caption">Наполнители:</legend>
                         <div class="filter-container filter-fill">
                             <label class="checkbox-label">
-                                <input type="checkbox" class="filter-checkbox visually-hidden" name="checkbox" value="шоколадные">
+                                <input type="checkbox" class="filter-checkbox visually-hidden" name="checkbox" value="шоколадные" checked>
                                 <span class="filter-text checkbox">шоколадные</span>
                             </label>
                             <label class="checkbox-label">
-                                <input type="checkbox" class="filter-checkbox visually-hidden" name="checkbox" value="сахарные присыпки">
+                                <input type="checkbox" class="filter-checkbox visually-hidden" name="checkbox" value="сахарные присыпки" checked>
                                 <span class="filter-text checkbox">сахарные присыпки</span>
                             </label>
                             <label class="checkbox-label">
