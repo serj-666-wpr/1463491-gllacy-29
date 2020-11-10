@@ -606,7 +606,7 @@ img {
 	display: block;
 	width: 11px;
 	height: 11px;
-	background-image: url(../img/x-min.svg);
+	background-image: url(../img/close-button-mini.svg);
 }
 
 .table-image {
@@ -1674,7 +1674,7 @@ img {
 	height: 17px;
 	border: none;
 	background-color: transparent;
-	background-image: url(../img/x.svg);
+	background-image: url(../img/close-button.svg);
 	cursor: pointer;
 }
 
