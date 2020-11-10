@@ -78,6 +78,9 @@
 	--darker-orange: #E84D37;
 	--red: #AC1000;
 	--dark-red: #942718;
+	--background-red: rgb(148, 8, 38);
+	--background-chocolate: rgb(65, 32, 27);
+	--background-yellow: rgb(240,233,206);
 }
 
 /* Global */
@@ -405,6 +408,17 @@ img {
 	border-radius: 4px;
 }
 
+.input-search:hover {
+	border: 2px solid var(--grey-lite-opacity);
+	padding: 12px 14px;
+}
+
+.input-search:focus {
+	outline: none;
+	border: 2px solid var(--blue-opacity);
+	padding: 12px 14px;
+}
+
 /* Login popup */
 .login-container {
 	position: relative;
@@ -473,6 +487,17 @@ img {
 	box-sizing: border-box;
 	border-radius: 4px;
 	margin-bottom: 20px;
+}
+
+.login-popup-input:hover {
+	border: 2px solid var(--grey-lite-opacity);
+	padding: 11px 14px 13px;
+}
+
+.login-popup-input:focus {
+	outline: none;
+	border: 2px solid var(--blue-opacity);
+	padding: 11px 14px 13px;
 }
 
 .login-popup-button {
@@ -581,7 +606,7 @@ img {
 	display: block;
 	width: 11px;
 	height: 11px;
-	background-image: url(../img/X-min.svg);
+	background-image: url(../img/x-min.svg);
 }
 
 .table-image {
@@ -761,10 +786,12 @@ img {
 .slider-button {
 	display: block;
 	width: max-content;
-	padding: 9px 41px;
+	padding: 9px 23px;
 	margin: 0 auto;
+	letter-spacing: 0.05em;
 	font-size: 32px;
 	line-height: 44px;
+	transform: translateX(-8px);
 }
 
 .slider-controls {
@@ -798,6 +825,7 @@ img {
 .raspberries-bonus,
 .chocolate-bonus {
 	background-image: url(../img/crimson-background.jpg);
+	background-color: var(--background-red);
 	padding: 14px 22px 23px 17px;
 	border-radius: 16px;
 	z-index: 1;
@@ -805,6 +833,7 @@ img {
 
 .chocolate-bonus {
 	background-image: url(../img/chocolate-background.jpg);
+	background-color: var(--background-chocolate);
 }
 
 .bonus-caption {
@@ -1208,6 +1237,7 @@ img {
 /* About us */
 .about-us {
 	background-image: url(../img/wafer.jpg);
+	background-color: var(--background-yellow);
 	padding: 24px 20px 30px;
 	box-sizing: border-box;
 	border-radius: 16px;
@@ -1266,6 +1296,7 @@ img {
 
 .news {
 	background-image: url(../img/strawberry-background.jpg);
+	background-color: var(--white);
 	padding: 19px 20px;
 	box-sizing: border-box;
 	border-radius: 16px;
@@ -1297,6 +1328,7 @@ img {
 /* Mailing */
 .mailing {
 	background-image: url(../img/mail-background.png);
+	background-color: var(--white);
 	padding: 5px 6px;
 	border-radius: 16px;
 }
@@ -1325,6 +1357,17 @@ img {
 	padding: 9px 13px;
 	border-radius: 6px;
 	margin-right: 5px;
+}
+
+.mailing-input:hover {
+	border: 2px solid var(--grey-lite-opacity);
+	padding: 8px 12px;
+}
+
+.mailing-input:focus {
+	outline: none;
+	border: 2px solid var(--blue-opacity);
+	padding: 8px 12px;
 }
 
 .mailing-button {
@@ -1592,16 +1635,27 @@ img {
 }
 
 .name:hover,
-.email:hover,
+.email:hover {
+	border: 2px solid var(--grey-lite-opacity);
+	padding: 11px 14px 10px;
+}
+
 .letter:hover {
 	border: 2px solid var(--grey-lite-opacity);
+	padding: 11px 14px 19px;
 }
 
 .name:focus,
-.email:focus,
+.email:focus {
+	outline: none;
+	border: 2px solid var(--blue-opacity);
+	padding: 11px 14px 10px;
+}
+
 .letter:focus {
 	outline: none;
 	border: 2px solid var(--blue-opacity);
+	padding: 11px 14px 19px;
 }
 
 .modal-button {
@@ -1620,7 +1674,7 @@ img {
 	height: 17px;
 	border: none;
 	background-color: transparent;
-	background-image: url(../img/X.svg);
+	background-image: url(../img/x.svg);
 	cursor: pointer;
 }
 
