@@ -20,6 +20,7 @@ try {
 modalOpen.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	modal.classList.add("modal-open");
+	page.classList.add("page-body-dimmer");
 	if (storage) {
 		modalName.value = storage;
 		modalEmail.focus();
@@ -33,12 +34,14 @@ modalClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	modal.classList.remove("modal-open");
 	modal.classList.remove("modal-error");
+	page.classList.remove("page-body-dimmer");
 });
 
 document.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
 		modal.classList.remove("modal-open");
 		modal.classList.remove("modal-error");
+		page.classList.remove("page-body-dimmer");
 	}
 });
 
@@ -53,14 +56,5 @@ modalButton.addEventListener("click", function (evt) {
 		if (isStorageSupport) {
 			localStorage.setItem("name", modalName.value);
 		}
-	}
-	if (!modalName.value) {
-		modalName.classList.add("invalid");
-	}
-	if (!modalEmail.value) {
-		modalEmail.classList.add("invalid");
-	}
-	if (!modalLetter.value) {
-		modalLetter.classList.add("invalid");
 	}
 });

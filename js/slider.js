@@ -22,9 +22,9 @@ firstSlide.addEventListener("click", function () {
 	secondText.classList.remove("visible");
 	thirdText.classList.remove("visible");
 
-	// slider.classList.remove("animation-slider");
-	// slider.offsetWidth = corousel.offsetWidth;
-	// slider.classList.add("animation-slider");
+	slider.classList.remove("animation-slider");
+	slider.offsetWidth = page.offsetWidth;
+	slider.classList.add("animation-slider");
 });
 
 secondSlide.addEventListener("click", function () {
@@ -40,9 +40,9 @@ secondSlide.addEventListener("click", function () {
 	secondText.classList.add("visible");
 	thirdText.classList.remove("visible");
 
-	// slider.classList.remove("animation-slider");
-	// slider.offsetWidth = corousel.offsetWidth;
-	// slider.classList.add("animation-slider");
+	slider.classList.remove("animation-slider");
+	slider.offsetWidth = page.offsetWidth;
+	slider.classList.add("animation-slider");
 });
 
 thirdSlide.addEventListener("click", function () {
@@ -58,7 +58,7 @@ thirdSlide.addEventListener("click", function () {
 	secondText.classList.remove("visible");
 	thirdText.classList.add("visible");
 
-	// slider.classList.remove("animation-slider");
-	// slider.offsetWidth = corousel.offsetWidth;
-	// slider.classList.add("animation-slider");
+	slider.classList.remove("animation-slider");
+	slider.offsetWidth = page.offsetWidth;
+	slider.classList.add("animation-slider");
 });
